@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Registrierkasse</title>
+<meta name="description" content="Datenschutzerklärung der Registrierkasse iOS-App gemäß DSGVO.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<header>
+  <a class="brand" href="index.html">
+    <span class="brand-title">Registrierkasse</span>
+  </a>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="support.html">Support</a>
+    <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+</header>
+
+<main>
+<h1>Datenschutzerklärung</h1>
+<p class="lead">Gültig für die iOS-App „Registrierkasse" von LinguaFlow e.U. Stand: 9. April 2026.</p>
+
+<h2>1. Verantwortlicher</h2>
+<p>
+LinguaFlow e.U. (Inhaber: Christian Nouza)<br>
+Linzer Straße 17, 4100 Ottensheim, Österreich<br>
+E-Mail: <a href="mailto:hello@linguaflow.app">hello@linguaflow.app</a><br>
+Telefon: +43 681 10580336
+</p>
+<p>Weitere Firmendaten siehe <a href="impressum.html">Impressum</a>.</p>
+
+<h2>2. Überblick</h2>
+<p>Die Registrierkasse-App ist eine Einzelplatz-Kassenlösung für den Betreiber selbst. Die App speichert Belegdaten lokal auf dem iPhone (SwiftData), synchronisiert sie in die private iCloud des Betreibers und überträgt Signaturdaten an den österreichischen Vertrauensdiensteanbieter A-Trust. Die App verarbeitet personenbezogene Daten nur insoweit, wie dies für den Betrieb einer RKSV-konformen Registrierkasse und den Versand elektronischer Belege erforderlich ist.</p>
+
+<h2>3. Welche Daten werden verarbeitet?</h2>
+
+<h3>3.1 Belegdaten (gesetzliche Aufbewahrungspflicht)</h3>
+<p>Pro Beleg werden Belegnummer, Datum, Uhrzeit, Betrag, Steuersatz, Zahlungsart, Umsatzzähler, Belegsignatur und optional Name und E-Mail-Adresse des Empfängers gespeichert. Rechtsgrundlage: Art. 6 Abs. 1 lit. c DSGVO (rechtliche Verpflichtung nach §132 BAO, §131b BAO, RKSV). Aufbewahrungsfrist: 7 Jahre gemäß §132 BAO.</p>
+
+<h3>3.2 Empfänger-Kontaktdaten</h3>
+<p>Wenn der Kunde einen Beleg per E-Mail erhalten möchte, werden Name (Vor- und Nachname, optional Anrede) und E-Mail-Adresse lokal gespeichert und ausschließlich zur Belegübermittlung verwendet. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) in Verbindung mit der Belegerteilungspflicht nach §132a BAO.</p>
+
+<h3>3.3 Kalenderzugriff (optional)</h3>
+<p>Wenn der Betreiber der App Zugriff auf den iOS-Kalender erlaubt, kann die App Termin-Informationen (Titel, Ort, Datum) lesen, um Kundendaten für neue Belege vorauszufüllen. Der Zugriff kann in den iOS-Einstellungen jederzeit widerrufen werden. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).</p>
+
+<h3>3.4 Zugangsdaten für Drittdienste</h3>
+<p>Die App speichert Zugangsdaten für den Vertrauensdiensteanbieter A-Trust (User-ID und PIN) sowie OAuth2-Tokens für die Gmail API in der iCloud-Keychain des Betreibers. Diese Daten sind Ende-zu-Ende-verschlüsselt, werden nie an den App-Anbieter übertragen und dienen ausschließlich der Signierung und dem Belegversand durch den Betreiber selbst.</p>
+
+<h2>4. Empfänger und Drittdienste</h2>
+
+<h3>4.1 A-Trust (Signierung)</h3>
+<p>
+A-Trust GmbH, Landstraßer Hauptstraße 1b/E02, 1030 Wien, Österreich.<br>
+Zweck: Kryptografische Signierung der Belege über das a.sign RK HSM (REST-API).<br>
+Übertragene Daten: Maschinenlesbarer Code des Belegs (Belegnummer, Datum, Betrag, Umsatzzähler verschlüsselt), kein Kundenname, keine Kunden-E-Mail.<br>
+Rechtsgrundlage: Art. 6 Abs. 1 lit. c DSGVO (RKSV).<br>
+Verarbeitung innerhalb der EU.
+</p>
+
+<h3>4.2 Apple iCloud</h3>
+<p>
+Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Irland.<br>
+Zweck: Private iCloud-Sicherung der Belege und Einstellungen des Betreibers (SwiftData + CloudKit), iCloud-Keychain für Zugangsdaten.<br>
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Datensicherung und Geräteausfallschutz).<br>
+Die Verarbeitung erfolgt in der privaten iCloud-Datenbank des Betreibers; der App-Anbieter hat keinen Zugriff darauf.
+</p>
+
+<h3>4.3 Google Gmail API (nur bei E-Mail-Versand)</h3>
+<p>
+Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.<br>
+Zweck: Versand der Belege per E-Mail über das Gmail-Konto des Betreibers (OAuth2).<br>
+Übertragene Daten: E-Mail-Adresse des Kunden, Name, Belegtext, Beleg-PDF als Anhang.<br>
+Rechtsgrundlage: Art. 6 Abs. 1 lit. b und lit. c DSGVO.<br>
+Die Gmail-Zugangsdaten werden ausschließlich im iCloud-Keychain des Betreibers gespeichert.
+</p>
+
+<h3>4.4 FinanzOnline (BMF)</h3>
+<p>Die Kassenregistrierung, die Übermittlung des Startbelegs und die jährliche Übermittlung des Jahresbelegs an FinanzOnline erfolgen durch den Betreiber selbst über das FinanzOnline-Portal. Die App überträgt keine Daten direkt an das Bundesministerium für Finanzen.</p>
+
+<h2>5. Tracking, Analytics, Werbung</h2>
+<p>Die App enthält <strong>keine</strong> Analytics-Frameworks, <strong>keine</strong> Werbung, <strong>keine</strong> Tracking-Pixel und <strong>keine</strong> Drittanbieter-SDKs zu Marketingzwecken. Es werden keine Nutzungsdaten an den App-Anbieter übertragen.</p>
+
+<h2>6. Speicherdauer</h2>
+<p>Belegdaten werden gemäß §132 BAO sieben Jahre aufbewahrt. Darüber hinausgehende Daten werden gelöscht, sobald der Zweck der Verarbeitung entfällt (z. B. Löschen der App, Widerruf des Gmail-Zugangs).</p>
+
+<h2>7. Ihre Rechte</h2>
+<p>Betroffene Personen haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Anfragen richten Sie bitte an <a href="mailto:hello@linguaflow.app">hello@linguaflow.app</a>.</p>
+<p>Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, haben Sie das Recht auf Beschwerde bei der <a href="https://www.dsb.gv.at/">Österreichischen Datenschutzbehörde</a> (Barichgasse 40-42, 1030 Wien).</p>
+
+<h2>8. Kontakt</h2>
+<p>Bei Fragen zum Datenschutz wenden Sie sich bitte an:<br>
+LinguaFlow e.U., Linzer Straße 17, 4100 Ottensheim, <a href="mailto:hello@linguaflow.app">hello@linguaflow.app</a>.</p>
+</main>
+
+<footer>
+  <p>© 2026 LinguaFlow e.U. · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="support.html">Support</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Registrierkasse</title>
+<meta name="description" content="Support, FAQ und Kontakt für die Registrierkasse iOS-App.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<header>
+  <a class="brand" href="index.html">
+    <span class="brand-title">Registrierkasse</span>
+  </a>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+</header>
+
+<main>
+<h1>Support</h1>
+<p class="lead">Fragen, Fehlermeldungen oder Feedback zur Registrierkasse-App? Wir freuen uns über Ihre Nachricht.</p>
+
+<div class="card">
+  <h2 style="margin-top:0">Direkter Kontakt</h2>
+  <p><strong>E-Mail:</strong> <a href="mailto:hello@linguaflow.app">hello@linguaflow.app</a><br>
+  <strong>Telefon:</strong> +43 681 10580336<br>
+  <strong>Antwortzeit:</strong> in der Regel innerhalb von 2 Werktagen.</p>
+</div>
+
+<h2>Häufige Fragen</h2>
+
+<h3>Was passiert, wenn mein iPhone offline ist?</h3>
+<p>Die App funktioniert auch ohne Internet. Belege werden lokal erstellt und mit einem Offline-Hinweis gespeichert. Sobald wieder eine Verbindung besteht, kann die Nachsignierung über den Button „Nachsignieren" in den RKSV-Aktionen ausgelöst werden.</p>
+
+<h3>Was ist, wenn mein iPhone defekt ist oder ich es verliere?</h3>
+<p>Sofern die iCloud-Sicherung aktiv ist, werden Belegkette, AES-Schlüssel und Einstellungen über SwiftData + CloudKit automatisch auf ein neues Gerät übertragen. Zusätzlich empfehlen wir, die RKSV-Sicherungsdatei regelmäßig aus der Dateien-App in einen sicheren Speicher (z. B. 1Password) zu kopieren.</p>
+
+<h3>Wie erstelle ich den Jahresbeleg?</h3>
+<p>Zwischen 1. Jänner und 15. Februar erinnert die App automatisch an den Jahresbeleg. Unter <em>Einstellungen → RKSV-Aktionen → Jahresbeleg</em> wird der Beleg erstellt und signiert. Anschließend muss er manuell über FinanzOnline übermittelt werden.</p>
+
+<h3>Welcher Vertrauensdiensteanbieter wird verwendet?</h3>
+<p>A-Trust (a.sign RK HSM) über die REST-API. Die Anbindung erfolgt direkt, ohne fiskaltrust-Middleware.</p>
+
+<h3>Kann der Beleg auch ohne E-Mail übergeben werden?</h3>
+<p>Ja. Der Kunde kann den auf dem iPhone angezeigten QR-Code mit der eigenen Handy-Kamera abfotografieren. Der QR-Code enthält den vollständigen maschinenlesbaren Code gemäß RKSV und ist als Beleg rechtsgültig.</p>
+
+<h3>Ist die App für mehrere Benutzer oder Kassen geeignet?</h3>
+<p>Nein. Die App ist bewusst als Einzelplatz-Kasse für genau einen Betreiber konzipiert. Jede Installation entspricht einer Kassenidentifikation im Sinne der RKSV.</p>
+
+<h2>Bug-Reports</h2>
+<p>Wenn Sie einen Fehler gefunden haben, schicken Sie bitte eine E-Mail mit folgenden Informationen:</p>
+<ul>
+  <li>iOS-Version und iPhone-Modell</li>
+  <li>App-Version (siehe <em>Einstellungen → Über die App</em>)</li>
+  <li>Schritte zum Reproduzieren</li>
+  <li>Screenshot oder Fehlermeldung, falls vorhanden</li>
+</ul>
+</main>
+
+<footer>
+  <p>© 2026 LinguaFlow e.U. · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="support.html">Support</a></p>
+</footer>
+</div>
+</body>
+</html>
